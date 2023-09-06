@@ -12,15 +12,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="login">
-            <h1>Welcome to the Five-year Premier League Quiz</h1>
-            <img class="logo" src="assets/images/premierlogo.png" alt="Logo">
-            <button id="login">Login</button>
-            <button id="rules">Rules</button>
-            <button id="scores">Scores</button>
+        <img class="logo" src="assets/images/premierlogo.png" alt="Logo">
+        <h1>Welcome to the Five-year Premier League Quiz</h1>
+        <button id="login-btn" onclick="showLoginForm()">Login</button>
+        <button id="rules-btn" onclick="showRules()">Rules</button>
+        <button id="scores-btn" onclick="showScores()">Scores</button>
+        <div id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-        <div class="quiz-page">
-            <h1>Quiz Game</h1>
+        <div id="rules">
+            <h2>Rules</h2>
+            <p>The rules are:
+                <ul>
+                    <li>There are 40 questions in total.</li>
+                    <li>Each question has 4 option, one of which is correct.</li>
+                    <li>Select the correct answer and click 'Next' to proceed</li>
+                </ul>
+            </p>
+        </div>
+        <div id="scores">
+            <h2>Scores</h2>
+            <p>Here are the scores of prvious players</p>
         </div>
     </div>
     
