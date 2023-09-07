@@ -40,7 +40,7 @@ if (email) {
 // Store the email in localStorage
     localStorage.setItem("userEmail", email);
 // Navigate to the quiz screen
-    window.location.href = "game.html";
+    window.location.href = "quiz.html";
 }
 });
 
